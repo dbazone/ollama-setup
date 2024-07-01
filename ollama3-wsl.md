@@ -87,5 +87,13 @@ curl http://10.11.12.150:11434/
 ```
 
 
+### Monitor
+Nivida latest driver should be installed before running this command
+
+```bash
+watch -n 1 nvidia-smi #GPU
+
+watch -n 1 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head #process
+```
 
 
