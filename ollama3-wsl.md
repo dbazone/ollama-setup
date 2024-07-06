@@ -68,6 +68,12 @@ Command need the elevated privilges
   connectaddress='172.26.97.50' `
   connectport=11434 
 
+netsh interface portproxy show al
+
+### delete the address
+netsh interface portproxy delete v4tov4   listenaddress='10.11.12.150' listenport=11434
+
+
 ```
 
 Firewall traffic
