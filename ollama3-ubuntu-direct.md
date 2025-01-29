@@ -1,6 +1,24 @@
 ## Ollama3
 Setup in Ubuntu (Server)
 
+
+### Static IP Address (WIP - Yet to be Tested)
+```yaml
+network:
+    ethernets:
+        ens18:
+            addresses:
+            - 10.11.12.254/24
+            nameservers:
+                addresses:
+                - 10.11.12.1
+                search: []
+            routes:
+            -   to: default
+                via: 10.11.12.1
+    version: 2
+```
+
 ### Download and install Ollama latest version
 
 System Update and Ollama setup  
